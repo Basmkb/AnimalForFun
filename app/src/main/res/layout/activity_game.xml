@@ -4,7 +4,102 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     android:orientation="horizontal"
     tools:context="com.example.user.animalforfun.Game">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_magin"
+        android:layout_marginTop="8dp"
+        android:text="@string/question"
+        android:textColor="@android:color/background_dark"
+        android:textSize="@dimen/h1"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvQuestion"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="@dimen/my_magin"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imbVolumn"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/bird_02" />
+
+    <ImageButton
+        android:id="@+id/imbVolumn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:onClick="play Sound"
+        android:scaleType="fitCenter"
+        app:layout_constraintLeft_toRightOf="@+id/imvQuestion"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imvQuestion"
+        app:srcCompat="@drawable/volume" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_magin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_magin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn1"
+        app:layout_constraintRight_toLeftOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_magin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn2"
+        app:layout_constraintRight_toLeftOf="@+id/btn4"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_magin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="choiceAns"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/btn3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvQuestion" />
 </android.support.constraint.ConstraintLayout>
