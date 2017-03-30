@@ -40,7 +40,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
         android:background="@null"
-        android:onClick="play Sound"
+        android:onClick="playSound"
         android:scaleType="fitCenter"
         app:layout_constraintLeft_toRightOf="@+id/imvQuestion"
         app:layout_constraintRight_toRightOf="parent"
