@@ -39,11 +39,11 @@
         android:textColor="@android:color/background_dark"
         android:textSize="@dimen/h2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/editText2"
+        app:layout_constraintRight_toLeftOf="@+id/txtName"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txtName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -53,7 +53,7 @@
         app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnStart"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
         app:layout_constraintVertical_bias="0.26999998" />
 
 </android.support.constraint.ConstraintLayout>
